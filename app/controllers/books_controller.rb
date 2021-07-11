@@ -32,7 +32,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     @book.update(book_params)
-    redirect_to book_path(@book)
+    redirect_to book_path(@book), notice: "You have created book successfully."
   end
 
   def destroy
