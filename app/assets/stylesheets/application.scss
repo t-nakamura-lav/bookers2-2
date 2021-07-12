@@ -16,3 +16,15 @@
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+.notice {
+  background-color: #99ff99;
+  color: #white;
+  text-align: center;
+}
+
+.alert {
+  background-color: #ff97c2;
+  color: #white;
+  text-align: center;
+}
