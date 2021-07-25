@@ -42,10 +42,13 @@
     </header>
 
   <main>
-    <% flash.each do |key, value| %>
-    <%= content_tag(:div, value, class: "#{key}") %>
-  　　<% end %>
-    <%= yield %>
+    <% if flash[:notice] %>
+      <p class="alert alert-success">
+  　   <%= flash[:notice] %>
+      </p>
+    <% end %>
+
+  <%= yield %>
   </main>
 
   <footer>
